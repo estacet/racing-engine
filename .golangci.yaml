@@ -1,0 +1,28 @@
+linters:
+  enable:
+    - asciicheck
+    - bodyclose
+    - contextcheck
+    - dupl
+    - errname
+    - forbidigo
+    - gocritic
+    - gofumpt
+    - goimports
+    - lll
+    - nestif
+    - nolintlint
+    - predeclared
+    - reassign
+    - unparam
+    - usestdlibvars
+  linters-settings:
+    goimports:
+      local-prefixes: github.com/greeflas/racing-engine-backend
+    predeclared:
+      q: true
+    reassign:
+      patterns:
+        - ".*"
+    usestdlibvars:
+      time-layout: true
